@@ -45,7 +45,7 @@
 					if ($num_rows > 0) {
 						// session_start();
 						$_SESSION['email'] = $uname;
-						header ("Location: /radiant/index.php");
+						header ("Location: /radiant/home.php");
 					} else {
 						// session_start();
 						$_SESSION['login'] = "";
@@ -108,7 +108,7 @@
 			} else {
 				$sql = "INSERT INTO $tbl_name(`email`, `password`) VALUES ('$uname', '$pword')";
 				if (mysqli_query($conn, $sql)) {
-				    header("Location: /radiant/index.php?Message='Create User Sucessful'");
+				    header("Location: /radiant/home.php?Message='Create User Sucessful'");
 				} else {
 				    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 				}
@@ -175,7 +175,7 @@
 				$sql = "INSERT INTO $tbl_name(`user`, `name`, `description`, `price`, `payment`, `start`, `end`, `tag`, `image`) VALUES ($user, '$item_name', '$description', $price, '$payment', '$start', '$end', '$tag', '$image')";
 
 				if (mysqli_query($conn, $sql)) {
-				    header("Location: /radiant/home.php?Message='Create User Sucessful'");
+				    header("Location: /radiant/home.php?Message='Upload Items Successful'");
 				} else {
 				    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 				}
