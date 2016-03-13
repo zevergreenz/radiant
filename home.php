@@ -105,8 +105,8 @@
                         <h2 class="section-title">Suggested Item</h2>
                         <div class="product-carousel">
                             <?php
-                                $user_name = "admin";
-                                $pass_word = "adminpassword";
+                                $user_name = "root";
+                                $pass_word = "";
                                 $database = "lendme";
                                 $server = "127.0.0.1";
                                 $tbl_name = "items";

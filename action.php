@@ -24,8 +24,8 @@
 			//==========================================
 			//	CONNECT TO THE LOCAL DATABASE
 			//==========================================
-			$user_name = "admin";
-			$pass_word = "adminpassword";
+			$user_name = "root";
+			$pass_word = "";
 			$database = "lendme";
 			$server = "127.0.0.1";
 			$tbl_name = "user";
@@ -86,8 +86,8 @@
 			//==========================================
 			//	CONNECT TO THE LOCAL DATABASE
 			//==========================================
-			$user_name = "admin";
-			$pass_word = "adminpassword";
+			$user_name = "root";
+			$pass_word = "";
 			$database = "lendme";
 			$server = "127.0.0.1";
 			$tbl_name = "user";
@@ -160,8 +160,8 @@
 				//==========================================
 				//	CONNECT TO THE LOCAL DATABASE
 				//==========================================
-				$user_name = "admin";
-				$pass_word = "adminpassword";
+				$user_name = "root";
+				$pass_word = "";
 				$database = "lendme";
 				$server = "127.0.0.1";
 				$tbl_name = "items";
