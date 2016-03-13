@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+<?php
+    session_start();
+    if (isset($_GET['Message'])) {
+        echo "<script type='text/javascript'>alert(".$_GET['Message'].");</script>";
+    }
+?>
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,10 +37,14 @@
 </head>
 
 <body>
-
+<h3><h3>
 <div class="container">
-  <h2>Sign up</h2>
-  <form role="form">
+  <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h1>Sign up</h1>
+      </div>
+  </div>
+  <form role="form" action="/radiant/action.php?func_name=sign_up" method="post">
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" class="form-control" name="email" placeholder="Enter email">
